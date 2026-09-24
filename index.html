@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Protótipo visual das duas primeiras cenas de MarianoShiroma.com.br.">
+  <title>Mariano Shiroma — Protótipo</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050505'/%3E%3Cpath d='M14 46V18h7l11 15 11-15h7v28h-8V31L32 44 22 31v15z' fill='%23ffd400'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <header class="site-header" aria-label="Cabeçalho">
+    <a class="wordmark" href="#inicio" aria-label="Mariano Shiroma, voltar ao início">MS<span>.</span></a>
+    <p>São Paulo <span aria-hidden="true">/</span> Brasil</p>
+    <p class="scene-counter" aria-live="polite"><span id="scene-number">01</span> — 02</p>
+  </header>
+
+  <main>
+    <section id="inicio" class="scene scene-portrait" aria-labelledby="portrait-title">
+      <div class="portrait-stage">
+        <picture class="portrait-photo">
+          <source media="(max-width: 720px)" srcset="mariano-angle.jpeg">
+          <img src="mariano-front.jpeg" alt="Retrato de Mariano Shiroma, de terno azul e braços cruzados">
+        </picture>
+        <div class="portrait-glow"></div>
+      </div>
+
+      <div class="intro-copy">
+        <p class="eyebrow">Médico <span></span> São Paulo</p>
+        <h1 id="portrait-title"><span>Mariano</span><span>Shiroma</span></h1>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span>Role para entrar</span>
+        <i></i>
+      </div>
+    </section>
+
+    <section id="hospital" class="scene scene-hospital" aria-labelledby="hospital-title">
+      <div class="hospital-world" aria-label="Espaço reservado para fotografia de ambiente hospitalar" role="img">
+        <div class="ceiling-light light-one"></div>
+        <div class="ceiling-light light-two"></div>
+        <div class="corridor-lines"></div>
+        <div class="door door-left"><span>02</span></div>
+        <div class="door door-right"><span>03</span></div>
+        <div class="vanishing-door"></div>
+        <div class="hospital-placeholder"><span>FOTO AMBIENTE HOSPITALAR</span></div>
+      </div>
+
+      <div class="hospital-copy">
+        <p class="eyebrow">Cena 02</p>
+        <h2 id="hospital-title">Onde o cuidado<br>acontece.</h2>
+      </div>
+      <p class="prototype-note">Protótipo visual — conteúdo definitivo pendente</p>
+    </section>
+  </main>
+
+  <noscript><p class="noscript">Ative o JavaScript para ver a transição entre as cenas.</p></noscript>
+  <script src="script.js"></script>
+</body>
+</html>
