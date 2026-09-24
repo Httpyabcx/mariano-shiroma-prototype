@@ -1,66 +1,35 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#050505">
-  <meta name="description" content="Protótipo visual das duas primeiras cenas de MarianoShiroma.com.br.">
-  <title>Mariano Shiroma — Protótipo</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050505'/%3E%3Cpath d='M14 46V18h7l11 15 11-15h7v28h-8V31L32 44 22 31v15z' fill='%23ffd400'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111210">
+<title>Mariano Shiroma — Perfil, trajetória e publicações</title>
+<meta name="description" content="Conheça Mariano Shiroma. Perfil, trajetória declarada, publicações sobre saúde e fontes públicas.">
+<meta property="og:title" content="Mariano Shiroma — Perfil e publicações"><meta property="og:description" content="Trajetória, saúde pública e publicações. Informações com acesso às fontes."><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:image" content="https://httpyabcx.github.io/mariano-shiroma-prototype/mariano-front.jpeg"><meta property="og:image:alt" content="Retrato de Mariano Shiroma"><meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111210'/%3E%3Ctext x='8' y='45' font-family='Arial' font-size='38' font-weight='bold' fill='%23f4e631'%3EM.%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
 <body>
-  <div class="progress" aria-hidden="true"><span></span></div>
-  <header class="site-header" aria-label="Cabeçalho">
-    <a class="wordmark" href="#inicio" aria-label="Mariano Shiroma, voltar ao início">MS<span>.</span></a>
-    <p>São Paulo <span aria-hidden="true">/</span> Brasil</p>
-    <p class="scene-counter" aria-live="polite"><span id="scene-number">01</span> — 02</p>
-  </header>
-
-  <main>
-    <section id="inicio" class="scene scene-portrait" aria-labelledby="portrait-title">
-      <div class="portrait-stage">
-        <picture class="portrait-photo">
-          <source media="(max-width: 720px)" srcset="mariano-angle.jpeg">
-          <img src="mariano-front.jpeg" alt="Retrato de Mariano Shiroma, de terno azul e braços cruzados">
-        </picture>
-        <div class="portrait-glow"></div>
-      </div>
-
-      <div class="intro-copy">
-        <p class="eyebrow">Médico <span></span> São Paulo</p>
-        <h1 id="portrait-title"><span>Mariano</span><span>Shiroma</span></h1>
-      </div>
-
-      <div class="scroll-cue" aria-hidden="true">
-        <span>Role para entrar</span>
-        <i></i>
-      </div>
-    </section>
-
-    <section id="hospital" class="scene scene-hospital" aria-labelledby="hospital-title">
-      <div class="hospital-world" aria-label="Espaço reservado para fotografia de ambiente hospitalar" role="img">
-        <div class="ceiling-light light-one"></div>
-        <div class="ceiling-light light-two"></div>
-        <div class="corridor-lines"></div>
-        <div class="door door-left"><span>02</span></div>
-        <div class="door door-right"><span>03</span></div>
-        <div class="vanishing-door"></div>
-        <div class="hospital-placeholder"><span>FOTO AMBIENTE HOSPITALAR</span></div>
-      </div>
-
-      <div class="hospital-copy">
-        <p class="eyebrow">Cena 02</p>
-        <h2 id="hospital-title">Onde o cuidado<br>acontece.</h2>
-      </div>
-      <p class="prototype-note">Protótipo visual — conteúdo definitivo pendente</p>
-    </section>
-  </main>
-
-  <noscript><p class="noscript">Ative o JavaScript para ver a transição entre as cenas.</p></noscript>
-  <script src="script.js"></script>
-</body>
-</html>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="header"><a href="#inicio" class="brand" aria-label="Mariano Shiroma, início">MARIANO<br>SHIROMA<span>.</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menu ＋</button><nav id="navigation" aria-label="Navegação principal"><a href="#perfil">Perfil</a><a href="#trajetoria">Trajetória</a><a href="#publicacoes">Publicações</a><a href="#fontes">Fontes</a><a class="nav-contact" href="#canais">Canais públicos ↗</a></nav></header>
+<main id="conteudo">
+<section class="hero" id="inicio" aria-labelledby="hero-title"><div class="hero-copy"><p class="kicker">■ &nbsp; MÉDICO · SÃO PAULO</p><h1 id="hero-title">Mariano<br><span>Shiroma.</span></h1><p class="hero-description">Um espaço para conhecer sua trajetória e acompanhar suas publicações sobre saúde e vida pública.</p><a class="text-link" href="#perfil">Conheça o perfil <span aria-hidden="true">↓</span></a><div class="hero-index"><span>01 / PERFIL PÚBLICO</span><span>BRASIL · 2026</span></div></div><figure class="hero-photo"><img src="mariano-front.jpeg" width="852" height="1280" alt="Mariano Shiroma, de braços cruzados, vestindo um terno azul" fetchpriority="high"><figcaption>Mariano Hiroaki Shiroma <span>Retrato</span></figcaption></figure></section>
+<div class="identity-strip"><p>ELEIÇÕES 2026</p><p>Candidato a deputado federal · SP</p><a href="https://candidatos.missao.org.br/candidato/250002546628">Missão · 1442 ↗<span class="sr-only"> — ficha no partido</span></a></div>
+<section class="section profile" id="perfil" aria-labelledby="profile-title"><div class="section-label"><span>01</span> O PERFIL</div><div class="profile-content"><h2 id="profile-title">Medicina.<br>Gestão.<br><em>Vida pública.</em></h2><div class="profile-text"><p class="lead">Mariano Hiroaki Shiroma é médico e candidato a deputado federal por São Paulo pelo Partido Missão.</p><p>Em sua apresentação pública, descreve uma trajetória ligada ao Sistema Único de Saúde e à gestão em saúde. Nas redes, publica sobre acesso ao atendimento, organização dos serviços e atividade parlamentar.</p><p class="source-note">Candidatura: <a href="https://candidatos.missao.org.br/candidato/250002546628">ficha do partido</a>. Trajetória: <a href="https://www.instagram.com/mariano.shiroma/">biografia publicada pelo próprio candidato</a>.</p></div></div></section>
+<section class="section trajectory" id="trajetoria" aria-labelledby="trajectory-title"><div class="section-label"><span>02</span> TRAJETÓRIA</div><div class="section-heading"><h2 id="trajectory-title">Experiência e<br>formação.</h2><p>Informações apresentadas nos seus perfis profissionais e públicos, com a origem indicada em cada item.</p></div><div class="trajectory-grid"><figure class="secondary-photo"><img src="mariano-angle.jpeg" width="852" height="1280" alt="Retrato de Mariano Shiroma em posição de três quartos" loading="lazy"><figcaption>MARIANO SHIROMA / SÃO PAULO</figcaption></figure><div class="credentials">
+<article><span class="credential-number">01 / ATUAÇÃO</span><h3>Medicina e gestão no SUS</h3><p>Declara 30 anos de experiência no Sistema Único de Saúde, atuando como médico e gestor.</p><a href="https://www.instagram.com/mariano.shiroma/">Biografia no Instagram ↗</a></article>
+<article><span class="credential-number">02 / FORMAÇÃO</span><h3>MBA em Gestão em Saúde</h3><p>A biografia no Instagram informa um MBA em Gestão em Saúde pela Fundação Getulio Vargas (FGV).</p><a href="https://www.instagram.com/mariano.shiroma/">Formação declarada ↗</a></article>
+<article><span class="credential-number">03 / EXPERIÊNCIA PROFISSIONAL</span><h3>Equipes multidisciplinares</h3><p>O perfil no LinkedIn menciona experiência com equipes multidisciplinares e inclui a SPDM/PAIS entre as organizações de sua trajetória.</p><a href="https://br.linkedin.com/in/mariano-h-shiroma-a5755514">Perfil profissional ↗</a></article><p class="source-note">Experiência e formação são declarações do titular dos perfis. As fontes consultadas não permitem confirmar todas as datas ou funções.</p></div></div></section>
+<section class="section publications" id="publicacoes" aria-labelledby="publications-title"><div class="section-label"><span>03</span> PUBLICAÇÕES</div><div class="section-heading"><h2 id="publications-title">Em pauta.</h2><p>Uma seleção de publicações do próprio candidato. Leia o contexto completo no Instagram.</p></div><div class="filters" role="group" aria-label="Filtrar publicações por assunto" hidden><button aria-pressed="true" data-filter="all">Todas</button><button aria-pressed="false" data-filter="saude">Saúde pública</button><button aria-pressed="false" data-filter="atividades">Atividades</button></div><p id="filter-status" class="sr-only" aria-live="polite"></p><div class="publication-grid">
+<article class="publication-card" data-category="saude"><div class="card-top"><span>SAÚDE PÚBLICA</span><time datetime="2026-09-24">24 SET 2026</time></div><span class="card-number" aria-hidden="true">01</span><h3>Acesso a exames<br>e tempo de espera</h3><p>Publicação sobre gestão, integração da rede e uso dos recursos para ampliar o acesso aos exames.</p><a href="https://www.instagram.com/mariano.shiroma/p/DdqrkzpEfaT/">Ler publicação ↗<span class="sr-only"> sobre acesso a exames</span></a></article>
+<article class="publication-card" data-category="saude"><div class="card-top"><span>SAÚDE PÚBLICA</span><time datetime="2026-09-22">22 SET 2026</time></div><span class="card-number" aria-hidden="true">02</span><h3>Saúde e atuação<br>parlamentar</h3><p>Uma publicação sobre a relação entre o trabalho de um deputado federal e as políticas públicas de saúde.</p><a href="https://www.instagram.com/mariano.shiroma/p/DdmAbftkWVl/">Ler publicação ↗<span class="sr-only"> sobre atuação parlamentar</span></a></article>
+<article class="publication-card" data-category="atividades"><div class="card-top"><span>ATIVIDADES</span><time datetime="2026-09-20">20 SET 2026</time></div><span class="card-number" aria-hidden="true">03</span><h3>Encontro na<br>Okinawa Vila Carrão</h3><p>Registro publicado de sua participação na homenagem aos octogenários da Associação Okinawa Vila Carrão.</p><a href="https://www.instagram.com/mariano.shiroma/p/DdhvhKbkf2l/">Ver registro ↗<span class="sr-only"> do encontro na Okinawa Vila Carrão</span></a></article>
+</div><p class="source-note">Resumos das legendas públicas. São posições e relatos do autor, não uma comprovação independente de resultados.</p></section>
+<section class="section sources" id="fontes" aria-labelledby="sources-title"><div class="section-label"><span>04</span> INFORMAÇÃO E FONTES</div><div class="sources-grid"><div><h2 id="sources-title">Contexto.<br>Origem.<br><em>Transparência.</em></h2><p>As fontes ficam próximas das informações para que você possa consultar os documentos e as publicações originais.</p></div><div class="faq">
+<details><summary>Qual é a candidatura apresentada?<span aria-hidden="true">＋</span></summary><div><p>A ficha publicada pelo Partido Missão apresenta Dr Mariano Shiroma como candidato a deputado federal por São Paulo nas eleições de 2026, com o número 1442.</p><a href="https://candidatos.missao.org.br/candidato/250002546628">Consultar a ficha do partido ↗</a></div></details>
+<details><summary>De onde vêm os dados do percurso profissional?<span aria-hidden="true">＋</span></summary><div><p>Da biografia pública do candidato no Instagram e de seu perfil no LinkedIn. As informações são identificadas como autodeclaradas. Este site não afirma ter verificado diplomas, vínculos atuais ou tempo de serviço.</p><a href="https://br.linkedin.com/in/mariano-h-shiroma-a5755514">Consultar o LinkedIn ↗</a></div></details>
+<details><summary>As publicações são um programa completo?<span aria-hidden="true">＋</span></summary><div><p>Não. A seleção reúne publicações e temas abordados pelo candidato. As legendas consultadas não constituem um programa legislativo completo, nem detalham metas, custos ou prazos.</p><a href="https://www.instagram.com/mariano.shiroma/">Consultar as publicações originais ↗</a></div></details>
+<details><summary>O que saber sobre os links externos?<span aria-hidden="true">＋</span></summary><div><p>Os links levam às plataformas indicadas. O Instagram pode solicitar uma conta para exibir parte do conteúdo. As políticas de privacidade de cada plataforma se aplicam ao acessá-la.</p></div></details>
+</div></div></section>
+<section class="channels" id="canais" aria-labelledby="channels-title"><div><p class="kicker">05 / CANAIS PÚBLICOS</p><h2 id="channels-title">Na fonte.</h2><p>Consulte as publicações e o perfil profissional.</p></div><div class="channel-links"><a href="https://www.instagram.com/mariano.shiroma/">Instagram <span aria-hidden="true">↗</span></a><a href="https://br.linkedin.com/in/mariano-h-shiroma-a5755514">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://candidatos.missao.org.br/candidato/250002546628">Ficha no partido <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer><div class="footer-top"><a href="#inicio" class="brand">MARIANO<br>SHIROMA<span>.</span></a><p>Perfil, trajetória e publicações.<br>Conteúdo consultado em 24 de setembro de 2026.</p><a href="#inicio">Voltar ao início ↑</a></div><details class="privacy"><summary>Sobre esta versão e privacidade</summary><p>Versão de apresentação em revisão editorial. As fotografias foram fornecidas para este projeto. Esta página não possui formulários, ferramentas de publicidade, análise de visitantes ou cookies próprios. O provedor de hospedagem pode manter registros técnicos de acesso; plataformas externas aplicam suas próprias políticas. Informações do responsável editorial e um canal específico para solicitações de privacidade ainda precisam ser definidos antes da apresentação como site oficial.</p></details><div class="footer-bottom"><span>MARIANO SHIROMA</span><span>SÃO PAULO · BRASIL</span></div></footer>
+</body></html>

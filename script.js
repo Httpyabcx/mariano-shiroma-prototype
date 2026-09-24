@@ -1,21 +1,33 @@
-const root = document.documentElement;
-const counter = document.querySelector('#scene-number');
-let ticking = false;
-
-function render() {
-  const maxScroll = Math.max(document.documentElement.scrollHeight - innerHeight, 1);
-  const progress = Math.min(Math.max(scrollY / maxScroll, 0), 1);
-  root.style.setProperty('--scroll', progress.toFixed(4));
-  counter.textContent = progress > 0.52 ? '02' : '01';
-  ticking = false;
+document.documentElement.classList.add('js');
+const toggle = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('#navigation');
+toggle.hidden = false;
+function closeMenu() {
+  toggle.setAttribute('aria-expanded', 'false');
+  navigation.classList.remove('is-open');
 }
-
-addEventListener('scroll', () => {
-  if (!ticking) {
-    requestAnimationFrame(render);
-    ticking = true;
+toggle.addEventListener('click', () => {
+  const open = toggle.getAttribute('aria-expanded') !== 'true';
+  toggle.setAttribute('aria-expanded', String(open));
+  navigation.classList.toggle('is-open', open);
+});
+navigation.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    toggle.focus();
   }
-}, { passive: true });
-
-addEventListener('resize', render, { passive: true });
-render();
+});
+const filters = document.querySelector('.filters');
+filters.hidden = false;
+filters.addEventListener('click', event => {
+  const button = event.target.closest('button[data-filter]');
+  if (!button) return;
+  filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+  let visible = 0;
+  document.querySelectorAll('.publication-card').forEach(card => {
+    card.hidden = button.dataset.filter !== 'all' && button.dataset.filter !== card.dataset.category;
+    if (!card.hidden) visible++;
+  });
+  document.querySelector('#filter-status').textContent = visible + (visible === 1 ? ' publicação exibida.' : ' publicações exibidas.');
+});
